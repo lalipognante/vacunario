@@ -17,37 +17,41 @@ En la sección Vencidas: se visualizarán las vacunas de todas las libretas que 
 En la sección Este Mes: se visualizarán las vacunas de todas las libretas que se deben colocar este mes.
 En la sección Próximo Mes: se visualizarán las vacunas de todas las libretas que se deben colocar el próximo mes.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/home.png" width="250">
- 
+ <img width="225" alt="home" src="https://user-images.githubusercontent.com/17903237/162877674-4ca2a687-334a-4a40-8d1f-854926d0bae8.png">
+
  #### Libretas
  Si se presiona el botón “libreta” del footer, se accede a la pantalla para administrar las libretas agregadas por dicho usuario.
 Esta pantalla es la parte central de la aplicación del padre. Aquí es donde se puede agregar una nueva libreta y se visualizan todas las libretas creadas por dicho padre.
 Si se presiona el nombre de cada libreta, se direcciona a la próxima pantalla que es “Detalle de libreta”.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/libretas.png" width="250">
+<img width="209" alt="libretas" src="https://user-images.githubusercontent.com/17903237/162877706-f5e9ca2d-ad5b-48a2-adbc-bfad277c84fb.png">
+
  
  #### Detalle de la libreta
  Al acceder al nombre de una libreta, se llega a esta pantalla. Aquí se obtienen todas las vacunas del Carnet de Vacunación oficial de Argentina, ordenadas por edad de colocación.
 Para cada vacuna se le asigna un icono rojo en cruz por defecto, ya que se necesita colocar esta vacuna por un responsable de salud autorizado para que el icono se convierta en un tilde verde.
 Cada vacuna tiene su información detallada, que lo veremos en la sección “Información de una vacuna”.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/detallelibreta.png" width="250">
-  
+<img width="220" alt="detallelibreta" src="https://user-images.githubusercontent.com/17903237/162877733-2de512f7-a9b3-4fff-926f-29f6ccf8d712.png">
+
+
  #### Colocación de la vacuna con código QR
  Para colocar una vacuna, se debe estar situado en el “Detalle de una libreta” y clickear sobre el nombre de la vacuna, inmediatamente se generará un código QR con la información de dicha vacuna y los datos de la persona a la cual se le colocará la vacuna.
 Este código QR debe ser escaneado por el Responsable de Salud autorizado , para que pueda colocarse.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/codigoqr.png" width="250">
+<img width="206" alt="codigoqr" src="https://user-images.githubusercontent.com/17903237/162877745-0adfccc8-b3aa-4f45-b634-abf093f3a899.png">
+
  
  #### Detalle de la vacuna
  Las vacunas que ya están colocadas, en vez de poseer el código QR, pasarán a contar con la información de dicha colocación, como: DNI de la persona a la cual fue colocada la vacuna, nombre de la vacuna colocada, fecha de colocación, Responsable de Salud que la colocó y Centro de Salud donde fue colocada.
  
- <img src="https://github.com/lalipognante/vacunario/blob/master/colocacion.png" width="250">
+ <img width="226" alt="colocacion" src="https://user-images.githubusercontent.com/17903237/162877756-f3fde2c9-a81c-42f7-8e75-42ef15daf8c2.png">
+
   
  #### Información de la vacuna
  Para informarse sobre una vacuna, se debe estar situado en el “Detalle de una libreta” y clickear sobre el icono “info” que está situado a la derecha de cada vacuna. En esta pantalla se visualizará el nombre completo de la vacuna, el detalle de dicha vacuna (el cual informa para qué colocarla) , un link de “Ver más información” el cual direcciona a la página oficial del gobierno de la nación que contiene más información sobre dicha vacuna y un mapa de google maps en el cual se visualizan solamente los Centros de Salud que tienen disponible en dicho momento esa vacuna.
  
- <img src="https://github.com/lalipognante/vacunario/blob/master/informacion.png" width="250">
+<img width="219" alt="informacion" src="https://user-images.githubusercontent.com/17903237/162877769-57b11d0d-fe8a-4b2c-8499-25501ed7870e.png">
 
 
  ### Pantallas de la aplicación del Responsable de Salud
