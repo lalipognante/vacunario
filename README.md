@@ -122,5 +122,6 @@ Al seleccionar en la pantalla Home el botón de “Responsables de Salud”, se 
  #### Dar de alta nuevo Responsables de Salud
 Al seleccionar en la pantalla “Responsables de Salud” el botón de “+” para dar de alta un nuevo responsable de salud, se abrirá la siguiente pantalla.
 La pantalla contendrá un formulario a completar con los siguiente campos: mail, contraseña, nombre, apellido, RUP, fecha de nacimiento y sexo.
+
  <img width="558" alt="alta-responsables-cds" src="https://user-images.githubusercontent.com/17903237/162877014-bb63ddd4-fded-4577-84e6-048c2e847333.png">
 
