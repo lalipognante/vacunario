@@ -1,3 +1,4 @@
+<img width="558" alt="alta-responsables-cds" src="https://user-images.githubusercontent.com/17903237/162876846-928cbde6-8b6e-4d59-9a6a-ff74286b4629.png">
 # Vacunario
 Con nuestra aplicación se busca ofrecer una solución para padres, responsables de salud y centros de salud. Buscando reemplazar las libretas de vacunación en papel y digitalizar todo el proceso oficial.
 
