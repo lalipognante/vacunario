@@ -16,7 +16,7 @@ Para el caso de los Centros de Salud, les permitirá simplificar la gestión del
 En la sección Vencidas: se visualizarán las vacunas de todas las libretas que no se hayan colocado en el momento adecuado, y solamente se mostrarán las vacunas que tienen un vencimiento hasta 2 meses .
 En la sección Este Mes: se visualizarán las vacunas de todas las libretas que se deben colocar este mes.
 En la sección Próximo Mes: se visualizarán las vacunas de todas las libretas que se deben colocar el próximo mes.
- <img src="https://github.com/lalipognante/vacunario/blob/master/home.png" width="600">
+ <img src="https://github.com/lalipognante/vacunario/blob/master/home.png" width="100">
  #### Libretas
  Si se presiona el botón “libreta” del footer, se accede a la pantalla para administrar las libretas agregadas por dicho usuario.
 Esta pantalla es la parte central de la aplicación del padre. Aquí es donde se puede agregar una nueva libreta y se visualizan todas las libretas creadas por dicho padre.
