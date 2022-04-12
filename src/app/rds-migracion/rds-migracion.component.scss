@@ -1,0 +1,25 @@
+.listado{
+    padding: 5%
+
+}
+.search{
+    padding: 5%;
+}
+
+.inputSearch{ 
+    width: 100%;
+}
+
+.button1{
+    right: 20px;
+
+}
+
+::ng-deep snack-bar-container.blue-snackbar {
+    // background: rgb(25, 167, 44);
+    background: #43A047;
+  }
+  
+  ::ng-deep .blue-snackbar .mat-simple-snackbar {
+    color: white;
+  }

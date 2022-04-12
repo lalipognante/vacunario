@@ -1,0 +1,48 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+
+}
+
+.footer {
+  background-color: #f5f5f5;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+code {
+  font-size: 80%;
+}
+
+.footer{
+  .nav-link{
+    color: grey;
+    transition: all .55s;
+    &.active{
+      color: #007bff;
+    }
+  }
+}

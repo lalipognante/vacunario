@@ -1,0 +1,16 @@
+.txt {
+  padding: 15%
+}
+
+::ng-deep snack-bar-container.blue-snackbar {
+  // background: rgb(25, 167, 44);
+  background: #43A047;
+}
+
+::ng-deep .blue-snackbar .mat-simple-snackbar {
+  color: white;
+}
+  
+.boton{
+  max-width: 100%;
+}

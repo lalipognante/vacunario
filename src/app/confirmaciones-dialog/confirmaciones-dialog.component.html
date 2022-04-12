@@ -1,0 +1,72 @@
+<div *ngIf="dataIncoming.type==='libreta'">
+  <div class="error-lib">
+  <mat-icon color="red">highlight_off</mat-icon>
+</div>
+  <p>
+    La libreta que estás creando ya existe! <br>
+    Si crees que es un error, contactanos!
+  </p>
+</div>
+
+<div *ngIf="dataIncoming.type==='libretaOK'">
+  <p>
+    Libreta creada con éxito
+  </p>
+</div>
+
+<div *ngIf="dataIncoming.type==='logout'">
+  <p>¿Está seguro que desea cerrar sesión?</p>
+  <button mat-flat-button mat-dialog-close color="warn">Cancelar</button>
+  <button mat-flat-button (click)="logout()" color="primary">Salir</button>
+</div>
+
+<div *ngIf="dataIncoming.type==='logoutCds'">
+  <p>¿Está seguro que desea cerrar sesión?</p>
+  <button mat-flat-button mat-dialog-close color="warn">Cancelar</button>
+  <button mat-flat-button (click)="logout()" color="primary">Salir</button>
+</div>
+
+<div *ngIf="dataIncoming.type==='logoutAdmin'">
+  <p>¿Está seguro que desea cerrar sesión?</p>
+  <button mat-flat-button mat-dialog-close color="warn">Cancelar</button>
+  <button mat-flat-button (click)="logout()" color="primary">Salir</button>
+</div>
+
+<div *ngIf="dataIncoming.type==='deleteRDS'">
+  <p>¿Está seguro que desea eliminar un Responsable?</p>
+  <div mat-dialog-actions>
+  <button mat-flat-button  (click)="deleteRDS()" color="primary">Eliminar</button>
+  <button mat-flat-button  mat-dialog-close color="warn">Cancelar</button>
+  </div>
+</div>
+
+<div *ngIf="dataIncoming.type==='deleteCDS'">
+  <p>¿Está seguro que desea eliminar al administrador del centro?</p>
+  <div mat-dialog-actions>
+  <button mat-flat-button  (click)="deleteCDS()" color="primary">Eliminar</button>
+  <button mat-flat-button  mat-dialog-close color="warn">Cancelar</button>
+  </div>
+</div>
+
+<div *ngIf="dataIncoming.type==='cambiarPassRDS'">
+  <p>
+    Mail enviado al Responsable para el cambio de contraseña
+  </p>
+  <button mat-flat-button  mat-dialog-close color="primary">Cerrar</button>
+</div>
+
+<div *ngIf="dataIncoming.type==='cambiarPassCDS'">
+  <p>
+    Mail enviado al Administrador para el cambio de contraseña
+  </p>
+  <button mat-flat-button  mat-dialog-close color="primary">Cerrar</button>
+</div>
+
+<div *ngIf="dataIncoming.type==='cambiarPassUSER'">
+    <p>
+      Mail enviado al Responsable para el cambio de contraseña
+    </p>
+    <button mat-flat-button  mat-dialog-close color="primary">Cerrar</button>
+  </div>
+
+

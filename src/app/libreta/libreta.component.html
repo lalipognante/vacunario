@@ -1,0 +1,52 @@
+<div class="list-group" *ngFor="let vacuna of vacunas | groupBy:'edad' ">
+  <!-- <div *ngIf="vacuna.edad < 24: else Años"> -->
+       <div class="titulo-edad" style="border-radius: 5px; box-shadow: 8px 8px 10px 10;">
+        <h5>Mes {{vacuna.value[0].edad}}</h5>
+        </div>
+  <!-- </div> -->
+  <!-- <ng-template #años>
+      <h5>Año {{vacuna.value[0].edad}}</h5>
+    </ng-template>         -->
+  
+  <mat-divider></mat-divider>
+
+
+        <div class="cada-vacuna" *ngFor="let i of vacuna.value" >   
+            <a (click)=openDialog(i.id,i.nombre,nombre.dni,nombre.nombre,nombre.apellido) class='list-group-item list-group-item-action'>              
+            
+            <div *ngIf="i.colocada; else noColocada">
+                <i class="far fa-check-circle"></i>     
+            </div>
+            <i class="material-icons" routerLink="/googlemap/{{i.id}}">info</i> 
+            {{i.nombre}}
+
+              <ng-template #noColocada>
+                  <i class="far fa-times-circle"></i>
+              </ng-template>
+
+            </a>
+            </div> 
+      <mat-divider></mat-divider>
+</div> 
+
+
+<!--
+  ABRE EL DIALOG SOLO SI NO ESTA COLOCADA:
+          <div class="cada-vacuna" *ngFor="let i of vacuna.value" >                 
+            <div *ngIf="i.colocada; else noColocada" class='list-group-item list-group-item-action'>
+                <i class="far fa-check-circle"></i>      
+                {{i.nombre}}
+            </div>
+
+              <ng-template #noColocada>
+                <div class='list-group-item list-group-item-action'>
+                  <a (click)=openDialog(i.id,i.nombre,nombre.dni,nombre.nombre,nombre.apellido)>
+                  <i class="far fa-times-circle"></i>
+                  <i class="material-icons" routerLink="/googlemap/{{i.id}}">info</i>
+                  {{i.nombre}}
+                </a>
+              </div>
+              </ng-template>
+
+            </div> 
+-->

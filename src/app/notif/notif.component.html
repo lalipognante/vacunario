@@ -1,0 +1,39 @@
+<mat-card>
+    <h2 class="example-h2">Notificaciones</h2>
+    <br>
+  <mat-card-content>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Recibir a email sobre ingreso de vacunas</label>
+      </div>
+
+    <mat-form-field>
+      <mat-label>Centros de salud</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option>Ninguno</mat-option>
+        <mat-option value="option1">Hospital de Santa Rosa de Calamuchita</mat-option>
+        <mat-option value="option2">Hospital de Monte Maiz</mat-option>
+        <mat-option value="option3">Hospital de Córdoba</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+
+    <mat-card-content>
+    <section class="example-section">
+      <mat-checkbox class="example-margin" [(ngModel)]="disabled">Recibir a email recordatorio de colocaciones</mat-checkbox>
+    </section>
+    <mat-form-field>
+      <mat-label>Recibir antes de..</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option>Ninguno</mat-option>
+        <mat-option value="option1">1 día antes </mat-option>
+        <mat-option value="option2">10 días antes </mat-option>
+        <mat-option value="option3">20 días antes</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+    <button mat-flat-button color="primary">Guardar cambios</button>
+
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,21 @@
+<div *ngIf="isLoaded" class="txt">
+    <h5>{{datos.nombre}} {{datos.apellido}}</h5>
+    <h6>{{datos.dni}}</h6>
+    <br>
+    <b>{{vacuna.nombre}}</b>
+
+    <button 
+    mat-flat-button color="primary" 
+    class="boton" 
+    class="btn btn-primary btn-sm btn-block" 
+    (click)="onClick()"
+    [disabled]="estaColocada"
+    >
+    Colocar
+    </button>
+
+    <div *ngIf="estaColocada&&isLoaded2">
+        <p style="color:red">La vacuna ya está colocada!</p>
+    </div>
+
+</div>

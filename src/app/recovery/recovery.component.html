@@ -1,0 +1,21 @@
+<div class="login">
+
+  <mat-card class="example2-card" *ngIf="!ok">
+    <p>Ingresá tú mail y te enviaremos los pasos para recuperar tu cuenta</p>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Mail</mat-label>
+      <input matInput placeholder="Mail" [(ngModel)]="mail">
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="recover()">Enviar</button>
+
+  </mat-card> 
+
+  <mat-card class="example2-card" *ngIf="ok">
+      <p>Listo! Ahora solo tenes que revisar tu mail</p>
+  
+      <button mat-flat-button color="primary" [routerLink]="['/login']">Volver a login</button>
+  
+    </mat-card> 
+</div>

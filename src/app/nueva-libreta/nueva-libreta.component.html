@@ -1,0 +1,49 @@
+<div [formGroup]="libreta" class="formLibreta">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Nombre" formControlName="nombre" name="nombre" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Apellido</mat-label>
+    <input matInput placeholder="Apellido" formControlName="apellido" name="apellido" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <input matInput 
+    [matDatepicker]="picker" 
+    placeholder="Fecha de nacimiento" 
+      [max]="maxDate" 
+      formControlName="fechaNacimiento"
+      name="nacimiento" 
+      disabled
+      required>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker startView="year"  disabled="false"></mat-datepicker>
+  </mat-form-field>
+
+  <div class="sexos">
+    <mat-radio-group formControlName="sexo" name="sexo">
+      <mat-radio-button class="cada-sexo" *ngFor="let sexoOpciones of sexoOpciones" [value]="sexoOpciones"
+        color="primary">
+        {{sexoOpciones}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field appearance="outline">
+    <mat-label>DNI</mat-label>
+    <input matInput placeholder="DNI" formControlName="dni" name="dni" type="number" required>
+    <mat-hint>Sólo números</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Dirección</mat-label>
+    <input matInput type="text" (keydown.enter)="$event.preventDefault()" formControlName="direccion"
+      placeholder="Direccion" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search required>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="onSubmitLibreta()" [disabled]="libreta.invalid">Agregar</button>
+
+</div>

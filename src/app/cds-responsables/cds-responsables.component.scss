@@ -1,0 +1,64 @@
+.button{
+    bottom: 8%;
+    align-items: flex-end;
+    position: fixed;
+    right: 4%;
+    outline: none;
+}
+
+  .rds-image-nena {
+    background-image: url('https://quizly.my/images/avatar/nurse.png');
+    background-size: cover;
+  }
+  .rds-image-nene {
+    background-image: url('https://image.flaticon.com/icons/png/512/387/387628.png');
+    background-size: cover;
+  }
+
+  .contenedor-card{
+    background-image: url("/assets/img/nurse/enfermeros.png");
+    // background-repeat: no-repeat;
+    // background-position: right top;  
+    .card{
+      padding: 15px;
+    //   max-width: 25%;
+      width: 160px;
+      margin: 1% 1%;
+      width: 48%;
+      float: left;
+      border-block-end: 0ch;
+    }
+    .avatar-rds{
+      width: 88px;
+      height: 88px;  
+    }
+    .nombre-rds{
+      color: black;
+    }
+    .dni-rds{
+      align-content: "center";
+      margin-left: 10px;  
+    }
+  }
+
+  .fondo{
+    background-image: url("/assets/img/nurse/enfermeros.png");
+    background-position: right top; 
+  }
+
+  .html{
+      max-width: 100%;
+  }
+
+  ::ng-deep snack-bar-container.blue-snackbar {
+    // background: rgb(25, 167, 44);
+    background: #43A047;
+  }
+  
+  ::ng-deep .blue-snackbar .mat-simple-snackbar {
+    color: white;
+  }
+
+  ::ng-deep .mat-simple-snackbar-action button{
+    color: white !important;
+  }

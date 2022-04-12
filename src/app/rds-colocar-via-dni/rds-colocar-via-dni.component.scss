@@ -1,0 +1,19 @@
+.example2-card {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+
+  .example2-card > * {
+    width: 100%;
+  }
+
+  .example2-card
+  {
+      display: table-cell;
+      vertical-align: middle
+  }
+
+  .example2-card {
+    max-width: 400px;
+  }

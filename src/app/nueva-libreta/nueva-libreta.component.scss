@@ -1,0 +1,19 @@
+.formLibreta {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+
+.sexos{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cada-sexo{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.formLibreta > * {
+  width: 100%;
+}

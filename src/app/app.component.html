@@ -1,0 +1,21 @@
+<mat-sidenav-container>
+  <mat-sidenav-content>
+    <mat-toolbar class="barra">
+      <mat-icon class="back" (click)="back()">arrow_back</mat-icon>
+      <span class="titulo">Vacunario</span>
+      <ul class="nav justify-content-center" *ngIf="type === 'centro'">
+        <li class="nav-recordatorios">
+          <a class="nav-link" [routerLink]="['/recordatorios']" routerLinkActive="active">
+            <i class="fas fa-lg fa-home"></i>
+          </a>
+        </li>
+      </ul>
+    </mat-toolbar>
+
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+<router-outlet></router-outlet>
+<app-menu-footer></app-menu-footer>

@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>{{description.nombre}}, {{description.apellido}}</h2>
+
+  <div *ngIf="infovacunas.colocada; else noColocada">
+    <div *ngIf="isLoaded2"> 
+      <div mat-dialog-content>
+        <p><b>DNI </b>{{description.libretaId}}</p>
+        <p><b>Vacuna </b>{{description.vacunaNombre}}</p>
+        <p><b>Fecha colocación </b> {{infovacunas.fecha}}</p>
+        <p><b>Responsable </b> {{responsable.apellido}}, {{responsable.nombre}} </p>
+        <p><b>Centro </b> {{centro.nombre}}</p>
+      </div>
+    </div>  
+  </div>
+
+ 
+  <ng-template #noColocada>
+      <div *ngIf="isLoaded">
+        <div mat-dialog-content>
+          <p>{{description.vacunaNombre}}</p>
+          <p><b>DNI </b>{{description.libretaId}}</p>
+          <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value"></ngx-qrcode>
+      </div>
+    </div>
+  </ng-template>
+

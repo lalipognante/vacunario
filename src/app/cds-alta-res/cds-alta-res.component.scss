@@ -1,0 +1,32 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    display: table-cell;
+    vertical-align: middle
+  }
+
+.register > * {
+    width: 100%;
+}
+
+.mat-form-field{
+  width: 100%;
+}
+.sexos{
+  display: flex;
+  justify-content: flex-start;
+}
+.cada-sexo{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.botones{
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.contenedor{
+  max-height: 100%;
+}

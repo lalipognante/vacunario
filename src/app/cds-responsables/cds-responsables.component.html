@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cds/home">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cds/inventario">Inventario</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/cds/responsables">Responsables de salud</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ <div class="contenedor-card">
+    <!-- <h5 style="padding-left: 20px;">Responsables de Salud</h5> -->
+
+    <mat-card class="card" *ngFor="let rd of rds" style="width: 180px;">
+      
+      <mat-card-header>
+        <mat-card-title>
+          <div class="avatar-rds" mat-card-avatar [ngClass]="(rd.sexo=='Femenino')?'rds-image-nena':'rds-image-nene'">
+          </div>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <a class="nombre-rds" (click)="editarResponsable(rd)">
+            {{rd.nombre}} {{rd.apellido}}
+          </a>
+        </mat-card-subtitle>
+        <mat-card-subtitle class="dni-rds">{{rd.rup}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+
+  <div class="contButton">
+    <button class="button" style="background-color: #3f51b5" mat-fab (click)="agregarResponsable()" color="accent">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>

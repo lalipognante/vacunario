@@ -1,0 +1,21 @@
+<mat-card class="example2-card">
+  <div class="example2-card">
+  
+    <mat-form-field appearance="outline">
+      <mat-label>Vacuna</mat-label>
+      <mat-select [(ngModel)]="v.id">
+        <mat-option *ngFor="let vacuna of vacunas" [value]="vacuna.id">
+          {{vacuna.nombre}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Cantidad colocada</mat-label>
+      <input type="number" matInput placeholder="Cantidad" [(ngModel)]="v.cantidad">
+    </mat-form-field>
+  
+    <button mat-flat-button color="primary" (click)="actualizarVal()">Guardar Cambios</button>
+
+  </div>
+  </mat-card>

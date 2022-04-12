@@ -1,0 +1,16 @@
+<mat-table mat-table [dataSource]="respuestas">
+
+  <ng-container matColumnDef="nombre">
+      <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+      <mat-cell *matCellDef="let respuesta"> {{respuesta.nombre}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="cantidad">
+      <mat-header-cell *matHeaderCellDef> Cantidad </mat-header-cell>
+      <mat-cell *matCellDef="let respuesta"> {{respuesta.cantidad}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+</mat-table> 

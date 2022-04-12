@@ -1,0 +1,55 @@
+<mat-vertical-stepper #stepper linear>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Usuario de destino</ng-template>
+
+        <div *ngIf="errMsj">
+          <p style="color:red">Usuario inexistente</p>
+        </div>
+        <mat-form-field>
+          <input matInput placeholder="Mail" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button (click)='searchNewUser(stepper)'>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Selecciona la libreta</ng-template>
+        <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+        formControlName="secondCtrl">
+        <mat-radio-button color="primary" class="example-radio-button" *ngFor="let libreta of libretas" [value]="libreta">
+          {{libreta.nombre}} {{libreta.apellido}}
+        </mat-radio-button>
+      </mat-radio-group>
+        <div>
+          <button mat-button matStepperPrevious>Atras</button>
+          <button mat-button matStepperNext (click)="libreta()">Siguientes</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+        <form>
+          <ng-template matStepLabel>Resumen</ng-template>
+          <div *ngIf="isLoaded2">
+            <p>La libreta <b>{{lib.dni}}</b></p>
+            <p>Sera tranfererida a </p>
+            <b>{{newUs.nombre}} {{newUs.apellido}}</b>
+            <br>
+          </div>
+          <div>
+            <button mat-flat-button (click)="stepper.reset()">Cancelar</button>
+            <button mat-flat-button color="primary" matStepperNext (click)="transferir()">Transferir</button>
+           
+          </div>
+        </form>
+      </mat-step>
+    <mat-step>
+    <ng-template matStepLabel>Fin</ng-template>
+      Transferida!
+    </mat-step>
+  </mat-vertical-stepper>

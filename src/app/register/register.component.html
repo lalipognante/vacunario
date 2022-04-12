@@ -1,0 +1,38 @@
+<div [formGroup]="usuario" class="register">
+  <mat-form-field appearance="outline">
+    <mat-label>Mail</mat-label>
+    <input matInput placeholder="Ingresa tu mail" formControlName="mail" required>
+    <mat-error *ngIf="verifyMail().invalid">Mail inválido</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Contraseña</mat-label>
+    <input matInput placeholder="Contraseña" formControlName="pass" [type]="hide ? 'text' : 'password'" required>
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+    <mat-error *ngIf="verifyPass().invalid">La contraseña debe tener al menos 6 caracteres</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Nombre" formControlName="nombre" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Apellido</mat-label>
+    <input matInput placeholder="Apellido" formControlName="apellido" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>DNI</mat-label>
+    <input matInput placeholder="DNI" formControlName="dni" type="number" required>
+    <mat-hint>Sólo números</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <input matInput [matDatepicker]="picker" formControlName="nacimiento" [max]="maxDate" placeholder="Fecha de nacimiento">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="onSubmitAddUser()" [disabled]="usuario.invalid">Registrarme</button>
+</div>

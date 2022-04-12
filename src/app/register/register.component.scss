@@ -1,0 +1,39 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    display: table-cell;
+    vertical-align: middle
+  }
+
+.register > * {
+    width: 100%;
+  }
+
+  .example-card {
+    max-width: 400px;
+  }
+
+  //config cargar imagen
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+    .contenedor-formulario {
+      width: 400px;
+    }
+  
+    .download {
+      background: #1081ff;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      a {
+        text-decoration: underline;
+        color: #FFFFFF;
+      }
+    }
+  }

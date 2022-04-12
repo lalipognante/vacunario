@@ -1,0 +1,125 @@
+<div *ngIf="isRds">
+    <div mat-dialog-content class="formNewUser">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Mail</mat-label>
+            <input matInput placeholder="Mail" [(ngModel)]="rds.mail">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" [(ngModel)]="rds.nombre">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="Apellido" [(ngModel)]="rds.apellido">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nacimiento</mat-label>
+            <input matInput placeholder="Fecha de Nacimiento" max="2000" [(ngModel)]="rds.nacimiento">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>RUP</mat-label>
+            <input disabled matInput placeholder="RUP" [(ngModel)]="rds.rup">
+        </mat-form-field>
+
+        <div mat-dialog-actions class="botones">
+            <button class="mat-raised-button mat-primary" (click)="saveRDS()">Guardar</button>
+            <button class="mat-raised-button mat-warn" (click)="exit()">Salir</button>
+            <button class="mat-raised-button" style="align-content: center" (click)="eliminarRDS()">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            <button class="mat-raised-button" style="align-content: center" (click)="cambiarPassRDS(rds.mail)">
+                Cambiar Contraseña
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div *ngIf="isCds">
+    <div mat-dialog-content class="formNewUser">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Mail</mat-label>
+            <input matInput placeholder="Mail" [(ngModel)]="cds.mail">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" [(ngModel)]="cds.nombre">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="Apellido" [(ngModel)]="cds.apellido">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>DNI</mat-label>
+            <input disabled matInput placeholder="RUP" [(ngModel)]="cds.dni">
+        </mat-form-field>
+
+        <div mat-dialog-actions class="botones">
+            <button class="mat-raised-button mat-primary" (click)="saveCDS()">Guardar</button>
+            <button class="mat-raised-button mat-warn" (click)="exit()">Salir</button>
+            <button class="mat-raised-button" style="align-content: center" (click)="eliminarCDS()">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            <button class="mat-raised-button" style="align-content: center" (click)="cambiarPassCDS(cds.mail)">
+                Cambiar Contraseña
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div *ngIf="isCenter">
+    <div mat-dialog-content class="formNewUser">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" [(ngModel)]="center.nombre">
+        </mat-form-field>
+
+
+        <mat-slide-toggle color="primary" [(ngModel)]="dirSi">Cambiar dirección</mat-slide-toggle>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Dirección</mat-label>
+            <input 
+            matInput 
+            placeholder="Dirección"
+            [(ngModel)]="center.direccion" 
+            [disabled]="!dirSi" 
+            type="text" 
+            (keydown.enter)="$event.preventDefault()" 
+            autocorrect="off" 
+            autocapitalize="off" 
+            spellcheck="off" 
+            #search>
+            <mat-hint>Si desea cambiar la dirección, habilite la opción.</mat-hint>
+        </mat-form-field>
+
+        <div mat-dialog-actions class="botones">
+            <button class="mat-raised-button mat-primary" (click)="saveCenter()">Guardar</button>
+            <button class="mat-raised-button mat-warn" (click)="exit()">Salir</button>
+            <!-- <button class="mat-raised-button" style="align-content: center" (click)="eliminarCDS()">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            <button class="mat-raised-button" style="align-content: center" (click)="cambiarPassCDS(cds.mail)">
+                Cambiar Contraseña
+            </button> -->
+
+        </div>
+
+    </div>
+
+</div>

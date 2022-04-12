@@ -1,0 +1,31 @@
+<div *ngIf="isLoaded">
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      
+  <ng-container matColumnDef="nombre">
+    <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+      <mat-cell *matCellDef="let lote"> {{lote.nombre}} </mat-cell>
+  </ng-container>
+  
+  <ng-container matColumnDef="cantidad">
+    <mat-header-cell *matHeaderCellDef > Cantidad </mat-header-cell>
+     <mat-cell *matCellDef="let lote"> 
+       <input matInput value=0 type="number" [(ngModel)]="lote.cantidad" min=0>
+      </mat-cell>
+  </ng-container>
+    
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+</mat-table>
+
+<!-- <button mat-flat-button color="accent" (click)="cargarLote()" class="boton">Cargar</button> -->
+<button type="button" class="btn btn-primary btn-sm btn-block" (click)="cargarLote()">Cargar</button>
+
+
+</div>
+
+<div class="boxRelleno">
+  
+</div>
+
+

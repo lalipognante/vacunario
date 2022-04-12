@@ -1,0 +1,24 @@
+<mat-list>
+    <mat-list-item>
+        <mat-icon matListIcon>account_circle</mat-icon>
+        <h3 matLine> Perfil </h3>
+    </mat-list-item>
+
+    <a href="/transferir">
+    <mat-list-item>
+        <mat-icon matListIcon>swap_horiz</mat-icon>
+        <h3 matLine> Transferir libreta </h3>
+    </mat-list-item>
+    </a>
+
+    <mat-list-item>
+        <mat-icon matListIcon>vpn_key</mat-icon>
+        <h3 matLine> Cambiar contraseña </h3>
+    </mat-list-item>
+
+    <mat-list-item>
+        <mat-icon matListIcon (click)="logout()">exit_to_app</mat-icon>
+        <h3 matLine (click)="logout()"> Cerrar sesión </h3>
+    </mat-list-item>
+  
+  </mat-list>

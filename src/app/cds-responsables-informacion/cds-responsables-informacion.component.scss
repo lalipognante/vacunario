@@ -1,0 +1,23 @@
+.mat-form-field{
+    width: 100%;
+}
+.botones{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.formNewUser{
+    max-height: 100%;
+}
+::ng-deep snack-bar-container.blue-snackbar {
+    // background: rgb(25, 167, 44);
+    background: #43A047;
+    font: white;
+  }
+  
+  ::ng-deep .blue-snackbar .mat-simple-snackbar {
+    color: white;
+  }
+  .botones .mat-raised-button{
+    margin-right: 8px;
+  }

@@ -1,0 +1,145 @@
+<div *ngIf="isRds">
+    <mat-dialog-content [formGroup]="rds" class="contenedor">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Mail</mat-label>
+            <input matInput placeholder="Mail" formControlName="mail">
+            <mat-error *ngIf="verifyMail().invalid">Mail inválido</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput placeholder="Contraseña" minSize="6" [type]="hide ? 'text' : 'password'"
+                formControlName="pass">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="verifyPass().invalid">La contraseña debe tener al menos 6 caracteres</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" formControlName="nombre">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="Apellido" formControlName="apellido">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>RUP</mat-label>
+            <input matInput placeholder="RUP" formControlName="rup">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nacimiento</mat-label>
+            <input matInput [matDatepicker]="dp3" placeholder="Fecha de Nacimiento" [max]="maxDate" disabled
+                formControlName="nacimiento">
+            <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false" startView="year" [startAt]="startDate" disabled="false">
+            </mat-datepicker>
+        </mat-form-field>
+
+
+        <div class="sexos">
+            <mat-radio-group formControlName="sexo" name="sexo">
+                <mat-radio-button class="cada-sexo" *ngFor="let sexoOpciones of sexoOpciones" color="primary"
+                    [value]="sexoOpciones">
+                    {{sexoOpciones}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div mat-dialog-actions class="botones">
+            <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="rds.invalid">Guardar</button>
+        </div>
+
+    </mat-dialog-content>
+
+</div>
+
+<div *ngIf="isCds">
+    <mat-dialog-content [formGroup]="cds" class="contenedor">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Mail</mat-label>
+            <input matInput placeholder="Mail" formControlName="mail">
+            <mat-error *ngIf="verifyMail().invalid">Mail inválido</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput placeholder="Contraseña" minSize="6" [type]="hide ? 'text' : 'password'"
+                formControlName="pass">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="verifyPass().invalid">La contraseña debe tener al menos 6 caracteres</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" formControlName="nombre">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="Apellido" formControlName="apellido">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>DNI</mat-label>
+            <input matInput placeholder="DNI" type="number" formControlName="dni">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nacimiento</mat-label>
+            <input matInput [matDatepicker]="dp3" placeholder="Fecha de Nacimiento" [max]="maxDate" disabled
+                formControlName="nacimiento">
+            <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false" startView="year" [startAt]="startDate" disabled="false">
+            </mat-datepicker>
+        </mat-form-field>
+
+        <div class="sexos">
+            <mat-radio-group formControlName="sexo" name="sexo">
+                <mat-radio-button class="cada-sexo" *ngFor="let sexoOpciones of sexoOpciones" color="primary"
+                    [value]="sexoOpciones">
+                    {{sexoOpciones}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Centro" formControlName="centroId">
+              <mat-option 
+              *ngFor="let centro of centros" 
+              [value]="{id: centro.id, nombre: centro.nombre}">{{centro.nombre}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div mat-dialog-actions class="botones">
+            <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="cds.invalid">Guardar</button>
+        </div>
+
+    </mat-dialog-content>
+
+</div>
+
+<div *ngIf="isCenter">
+
+<mat-dialog-content [formGroup]="centro" class="contenedor">
+
+    <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre" formControlName="nombre">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Dirección</mat-label>
+        <input matInput type="text" (keydown.enter)="$event.preventDefault()" formControlName="direccion"
+          placeholder="Direccion" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+      </mat-form-field>
+
+      <div mat-dialog-actions class="botones">
+        <button class="mat-raised-button mat-primary" (click)="save()" [disabled]="centro.invalid">Guardar</button>
+    </div>
+</mat-dialog-content>
+</div>

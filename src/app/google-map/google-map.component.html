@@ -1,0 +1,39 @@
+<div *ngIf="isLoaded&&isLoaded2">
+<mat-card class="example-card">
+
+  <mat-card-header>
+    <mat-card-title>{{vacuna.nombre}}</mat-card-title>
+      <mat-card-subtitle>
+        {{vacuna.descripcion}}
+        <a class="nav-link" href="{{vacuna.link}}">Ver más información</a>
+      </mat-card-subtitle>
+    </mat-card-header>
+
+  <div class="contenido-mapa"> 
+    <agm-map 
+      [latitude]="latitud" 
+      [longitude]="longitud" 
+      [zoom]="zoom">
+        <!-- <agm-marker
+                  [latitude]="latitud"
+                  [longitude]="longitud"
+                  [iconUrl]="icon2">
+                  <agm-info-window>
+                    Tú
+                  </agm-info-window>
+        </agm-marker> -->
+        <agm-marker *ngFor="let mapa of mapas" 
+                    [latitude]="mapa.geolocalizacion._latitude"    
+                    [longitude]="mapa.geolocalizacion._longitude" 
+                    [iconUrl]="icon"
+                    markerClickable
+                    (markerClick)="goToMaps(mapa.geolocalizacion._latitude, mapa.geolocalizacion._longitude)">
+                    <agm-info-window>
+                      {{mapa.nombre}}
+                    </agm-info-window>
+        </agm-marker>
+      </agm-map>
+    </div>  
+</mat-card>
+
+</div>

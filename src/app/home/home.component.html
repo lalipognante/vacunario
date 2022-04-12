@@ -1,0 +1,42 @@
+<div *ngIf="isLoaded" class="header">
+  <h4>{{usuario.nombre}} {{usuario.apellido}}</h4>
+</div>
+
+<div *ngIf="isLoaded" class="contenedor-card">
+  <h5 style="padding-left: 20px;">Mis libretas</h5>
+
+  <mat-card class="card" *ngFor="let libret of librets">
+
+    <mat-card-header>
+      <mat-card-title>
+        <div class="avatar-hijo" mat-card-avatar [ngClass]="(libret.sexo=='Femenino')?'card-image-nena':'card-image-nene'">
+        </div>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <a class="nombre-hijo" routerLink="/libreta/{{libret.dni}}">
+          {{libret.nombre}} {{libret.apellido}}
+        </a>
+      </mat-card-subtitle>
+      <mat-card-subtitle class="dni-hijo">{{libret.dni}}</mat-card-subtitle>
+    </mat-card-header>
+
+
+  </mat-card>
+
+
+
+  <div *ngIf="!hayLibrets&&isLoaded" class="NoLibreta">
+    <mat-card class="example-card">
+      <mat-card-content>
+        <b>
+          No tenés libretas registradas todavía!
+          Registralas con el botón "+"
+        </b>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <button class="boton" style="background-color: #60C3FF" mat-fab routerLink="/nueva-libreta">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

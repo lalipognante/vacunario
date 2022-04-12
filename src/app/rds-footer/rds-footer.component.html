@@ -1,0 +1,36 @@
+<footer class="footer mt-auto py-1">
+  <div class="container">
+      <ul class="nav justify-content-center">
+
+          <li class="nav-recordatorios">
+            <a class="nav-link" [routerLink]="['/rds-home']" routerLinkActive="active">
+              <!-- <mat-icon>home</mat-icon> -->
+              <i class="fas fa-lg fa-home"></i>
+            </a>
+          </li>
+
+          <li class="nav-home">
+              <a class="nav-link" [routerLink]="['/rds-escaneo']" routerLinkActive="active">
+                <i class="far fa-lg fa-address-book"></i>
+              </a>
+          </li>
+
+          <li class="nav-config">
+            <a class="nav-link" [routerLink]="['/rds-migracion']" routerLinkActive="active">
+              <!-- <mat-icon>settings</mat-icon> -->
+              <i class="fas fa-lg fa-cog"></i>
+            </a>
+          </li>
+          
+            <li class="nav-out">
+            <a class="nav-link" (click)='onLogout()'>
+                <!-- <mat-icon>power_settings_new</mat-icon> -->
+                <i class="fas fa-lg fa-power-off"></i>
+            </a>
+          </li>
+          
+      </ul>
+  </div>
+</footer>
+
+

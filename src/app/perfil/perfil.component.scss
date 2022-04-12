@@ -1,0 +1,18 @@
+.perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .perfil > * {
+    width: 100%;
+  }
+
+  .perfil
+  {
+      display: table-cell;
+      vertical-align: middle
+  }
+
+  .example-card {
+    max-width: 400px;
+  }

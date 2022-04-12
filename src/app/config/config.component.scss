@@ -1,0 +1,11 @@
+.config {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+  }
+  
+  .config > * {
+    width: 100%;
+  }
+
+  

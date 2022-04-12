@@ -1,0 +1,42 @@
+<div *ngIf="isLoaded">
+<div class="header">
+  <h4>{{rds.nombre}} {{rds.apellido}}</h4>
+</div>
+
+<mat-list>
+<a [routerLink]="['/rds/scan']">
+  <mat-list-item>
+    <mat-icon matListIcon>local_see</mat-icon>
+    <h3 matLine> Colocar vacuna via QR </h3>
+  </mat-list-item>
+</a>
+
+<a [routerLink]="['/rds/via-dni']">
+  <mat-list-item>
+    <mat-icon matListIcon>assignment_ind</mat-icon>
+    <h3 matLine>Colocar vacuna via DNI</h3>
+  </mat-list-item>
+</a>
+
+<a href='rds/manual'> 
+  <mat-list-item>
+      <mat-icon matListIcon>create</mat-icon>
+      <h3 matLine> Registro tradicional de vacuna </h3>
+    </mat-list-item>
+  </a>
+
+  <a href='rds/migracion'> 
+    <mat-list-item>
+        <mat-icon matListIcon>swap_horiz</mat-icon>
+        <h3 matLine> Migracion de Carnet </h3>
+      </mat-list-item>
+  </a>
+
+  <mat-list-item>
+    <mat-icon matListIcon (click)="logout()">exit_to_app</mat-icon>
+    <h3 matLine (click)="logout()"> Cerrar sesión </h3>
+</mat-list-item>
+
+</mat-list>
+
+</div>

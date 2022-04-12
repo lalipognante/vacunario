@@ -1,0 +1,22 @@
+<div class="search">
+  
+  <h5 style="align-items: center"> Migracion de Carnet </h5>
+
+  <mat-form-field appearance="outline" class="inputSearch">
+    <mat-label>DNI</mat-label>
+      <input matInput placeholder="Ingrese DNI del carnet" [(ngModel)]="dni">
+      <mat-icon (click)='buscarLibreta()' matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <!-- <button mat-flat-button color="primary" >Buscar</button> -->
+
+</div>
+
+<div class="listado" *ngIf="isLoaded">
+  <section class="example-section" *ngFor='let vacuna of vacunas'>
+      <mat-checkbox color="primary" [(ngModel)]="vacuna.colocada"> {{vacuna.nombre}} </mat-checkbox>
+  </section>
+  
+  <button mat-flat-button color="primary" (click)="onClick()">Colocar</button>
+</div>
+

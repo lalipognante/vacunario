@@ -1,0 +1,28 @@
+.example2-card {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+
+  .example2-card > * {
+    width: 100%;
+  }
+
+  .example2-card
+  {
+      display: table-cell;
+      vertical-align: middle
+  }
+
+  .example2-card {
+    max-width: 400px;
+  }
+
+  ::ng-deep snack-bar-container.blue-snackbar {
+    // background: rgb(25, 167, 44);
+    background: #43A047;
+  }
+  
+  ::ng-deep .blue-snackbar .mat-simple-snackbar {
+    color: white;
+  }

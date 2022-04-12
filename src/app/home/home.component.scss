@@ -1,0 +1,63 @@
+
+.md-padding{
+  align-content: right;
+}
+
+.contenedor-card{
+  .card{
+    padding: 15px;
+    margin: 1% 1%;
+    width: 48%;
+    float: left;
+    -moz-border-radius: 19px;
+    -webkit-border-radius:19px;
+  }
+  .avatar-hijo{
+    width: 88px;
+    height: 88px;  
+  }
+  .nombre-hijo{
+    color: black;
+  }
+  .dni-hijo{
+    align-content: "center";
+    margin-left: 10px;  
+  }
+}
+
+.warning{
+  color: red;
+}
+.mat-expansion-panel-header{
+  font-size: 17px;
+}
+.mat-expansion-panel{
+  font-size: 12px;
+}
+.card-image-nena {
+  background-image: url('https://www.pngkit.com/png/full/115-1150342_user-avatar-icon-iconos-de-mujeres-a-color.png');
+  background-size: cover;
+}
+.card-image-nene {
+  background-image: url('https://image.flaticon.com/icons/png/512/146/146009.png');
+  background-size: cover;
+}
+
+.enter{
+  color: black;
+}
+
+.header{
+  padding: 5%;
+}
+.boton{
+  bottom: 8%;
+  align-items: flex-end;
+  position: fixed;
+  right: 4%;
+}
+
+
+.NoLibreta{
+  padding: 10%;
+}

@@ -1,0 +1,122 @@
+.button{
+padding: 0 20px 0 20px;
+margin: 24px 20px 24px 20px;
+min-width: 200px;
+border-radius: 3px;
+font-size: 16px;
+text-align: center;
+}
+.line-chart{
+    padding: 10px;
+}
+
+.ventanaStock{
+    width: 300px;
+    font-size: 15px;
+}
+
+.contenedor{
+    position: relative;
+    .fondo{
+      background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/66/09/855789ba5a28a3f.jpg");
+      background-position: center; 
+      background-size: cover; 
+      height: 80px;
+      opacity: 0.2;
+    }
+    .nombre{
+        font-size: 30px;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        top: 10px;
+        left: 1rem;
+      }
+  }
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.grid-item.item1{
+    text-align: start;
+    padding-right: 10px;
+}
+.flex-contenedor{
+    display: flex;
+    align-items: flex-start;
+}
+.item1 {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    width: 550px;
+    text-align: start;
+    margin-right: 20px;
+}
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 1;
+    width: 260px;
+    height: 350px;
+}
+.item3{
+    width: 260px;
+    height: 350px;
+
+}
+.item4 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+.buttonRes{
+    height: 100%;
+    width: 160px;
+}
+.buttonInv{
+    height: 100%;
+}
+.card{
+    padding: 15px;
+    margin: 1% 1%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+.avatar-res{
+    background-image: url("/assets/img/nurse/enfermeros8.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 135px;
+    height: 124px;
+    max-width: 100%;
+}
+.avatar-inv{
+    background-image: url("/assets/img/nurse/stock5.png");
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+.rojo{
+    color: #D50000;
+}
+.verde{
+    color: #008b00;
+}
+.amarillo{
+    color: #f47100;
+}
+
+.texto-rds{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+

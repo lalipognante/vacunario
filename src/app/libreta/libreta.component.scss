@@ -1,0 +1,36 @@
+.material-icons{
+    color: #567EF8;
+    position: absolute;
+    top: 12px;
+    right: 15px; 
+}
+.list-group{
+    position: relative;
+    .cada-vacuna{
+        .list-group-item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            i{
+                margin-right: 1rem;
+                font-size: 20px;
+                &.fa-check-circle{
+                    color: green;
+                }
+                &.fa-times-circle{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.titulo-edad{ 
+    font-display: center;
+    height: 35px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #DBEAFF , white);
+}
