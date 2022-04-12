@@ -1,4 +1,3 @@
-<img width="558" alt="alta-responsables-cds" src="https://user-images.githubusercontent.com/17903237/162876846-928cbde6-8b6e-4d59-9a6a-ff74286b4629.png">
 # Vacunario
 Con nuestra aplicación se busca ofrecer una solución para padres, responsables de salud y centros de salud. Buscando reemplazar las libretas de vacunación en papel y digitalizar todo el proceso oficial.
 
@@ -57,24 +56,20 @@ Este código QR debe ser escaneado por el Responsable de Salud autorizado , para
 Los responsables de salud necesitan ser dados de alta por el Centro del Salud en el cual trabajan, ellos le proveerán una cuenta de usuario y contraseña con la cual podrán ingresar a la aplicación.
 Al ingresar a la aplicación llegamos a la pantalla principal , en la cual se muestran las diferentes acciones que puede realizar dicho responsable.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/home-res.png" width="250">
+<img width="176" alt="Captura de Pantalla 2022-04-12 a la(s) 00 55 59" src="https://user-images.githubusercontent.com/17903237/162877335-d2b0749e-9239-49db-a183-5b4fe14d03fd.png">
+
  
   #### Colocación via QR de la vacuna
 Al seleccionar en el home la opción “Colocar vacuna vía código QR” el responsable de salud accede a la siguiente pantalla en la cual se habilitará la camara de su dispositivo, para que escanee el código QR del paciente al cual le va a colocar la vacuna. Cuando se escanee el código QR se le abrirá una ventana de colocación de vacuna, donde se le detallarán los datos del paciente que se le coloca la vacuna, la información de la vacuna y un botón para colocar dicha vacuna. Al colocar la vacuna, automáticamente se descuenta del stock del Centro de Salud al cual pertenece dicho Responsable de Salud.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/colocacion-res.png" width="250">
- 
-#### Colocación via QR de la vacuna
-Al seleccionar en el home la opción “Colocar vacuna vía código QR” el responsable de salud accede a la siguiente pantalla en la cual se habilitará la camara de su dispositivo, para que escanee el código QR del paciente al cual le va a colocar la vacuna. Cuando se escanee el código QR se le abrirá una ventana de colocación de vacuna, donde se le detallarán los datos del paciente que se le coloca la vacuna, la información de la vacuna y un botón para colocar dicha vacuna. Al colocar la vacuna, automáticamente se descuenta del stock del Centro de Salud al cual pertenece dicho Responsable de Salud.
-
- <img src="https://github.com/lalipognante/vacunario/blob/master/colocacion-res.png" width="250">
+<img width="182" alt="Captura de Pantalla 2022-04-12 a la(s) 00 56 23" src="https://user-images.githubusercontent.com/17903237/162877377-23cf92a1-ff3f-4d79-9f5a-fb7702bfb25a.png">
  
 #### Colocación manual de la vacuna con DNI
 
 Uno de los aspectos que se tuvo en cuenta, es el caso en que el paciente que está registrado en nuestra aplicación, se coloque la vacuna pero no cuente en ese momento con la aplicación para que el Responsable de Salud pueda escanear el código QR.
 Por lo cual se desarrollo la funcionalidad “Colocar vía DNI”, la cual se accede desde el Home del Responsable de Salud y se visualizará una pantalla donde deberá ingresar qué vacuna se colocó e introducir el DNI de del paciente para verificar que pertenezca en la aplicación su libreta.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/dni-res.png" width="250">
+<img width="175" alt="Captura de Pantalla 2022-04-12 a la(s) 00 56 56" src="https://user-images.githubusercontent.com/17903237/162877462-07bd460f-f07d-4d0c-a83a-7f5edba77bbe.png">
  
   
 #### Registro tradicional de vacuna
@@ -82,15 +77,17 @@ Por lo cual se desarrollo la funcionalidad “Colocar vía DNI”, la cual se ac
 Otro aspecto que tuvimos en cuenta a la hora de colocar es una vacuna, es el caso de los pacientes que no estén registrados en la aplicación y utilicen el carnet de vacunación tradicional en papel. Este aspecto es muy importante para mantener actualizado el stock a la hora de brindar información a los usuarios sobre cuáles son los centros de salud que tienen disponible dicha vacuna.
 Dado la importancia de mantener informado a los usuarios sobre el stock real de vacunas con el que cuenta dicho Centro de Salud, se desarrolló la funcionalidad “Registro tradicional de vacuna”, la cual se accede desde el Home del Responsable de Salud y se abrirá una pantalla donde debe seleccionar la vacuna colocada y la cantidad de esa vacuna que se colocó a pacientes con carnet de vacunación en papel.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/tradicional-res.png" width="250">
+<img width="171" alt="Captura de Pantalla 2022-04-12 a la(s) 00 57 08" src="https://user-images.githubusercontent.com/17903237/162877513-2f1010bf-a783-475a-9233-0b3cd3cdf1d5.png">
+
  
  #### Migracion del carnet
 
 Al seleccionar en el home la opción “Migración de carnet” el responsable de salud accede a la siguiente pantalla en la cual visualizará un buscador, donde debe ingresar el DNI del paciente, al cual se le quiere migrar a su cuenta en nuestra aplicación, todas las vacunas que fueron colocadas de manera tradicional en el carnet de vacunación en papel.
 Al encontrar el DNI del paciente se visualizará la lista de vacunas con un checkbox a su izquierda, los cuales deben ser marcados en relación a las vacunas que tiene colocadas.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/migracion-res.png" width="250">
- 
+<img width="190" alt="Captura de Pantalla 2022-04-12 a la(s) 00 58 04" src="https://user-images.githubusercontent.com/17903237/162877548-7516a434-6406-4f07-8d96-848be65ca7dc.png">
+
+
  ### Pantallas de la aplicación del Centro de Salud
 
 #### Home
@@ -100,27 +97,30 @@ El Centro de Salud al ingresar a la aplicación se encuentra con la pantalla pri
 3. Acceso directo al Inventario
 4. Visualiza un gráfico que indica la cantidad de vacunas que se colocaron por mes
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/home-cds.png" width="250">
+<img width="511" alt="Captura de Pantalla 2022-04-12 a la(s) 00 48 19" src="https://user-images.githubusercontent.com/17903237/162877098-d27375db-65f4-4094-a2ce-99af079990cd.png">
+
  
  #### Inventario
 Al seleccionar en el home la opción “Inventario” se accede a la siguiente pantalla en la cual visualizará una tabla con el nombre de la vacuna y la cantidad que hay en stock. También se brinda un buscador, en donde se puede buscar el detalle de una vacuna.
 En la pantalla se encuentra abajo a la derecha un botón para agregar un nuevo cargamento de inventario.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/inventario-cds.png" width="250">
+<img width="547" alt="Captura de Pantalla 2022-04-12 a la(s) 00 49 01" src="https://user-images.githubusercontent.com/17903237/162877087-8b81b13f-0899-46c4-8912-114de5bfc490.png">
+
  
   #### Cargar inventario
 Al seleccionar en la pantalla “Inventario” el botón de “+” para agregar un nuevo cargamento de inventario, se abrirá la siguiente pantalla.
 La pantalla contendrá un listado de las vacunas que puede recibir el centro de Salud y a la derecha de cada vacuna se habilitará un campo para ingresar la cantidad recibida de dicha vacuna.
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/carga-inventario-cds.png" width="250">
+<img width="561" alt="responsables-cds" src="https://user-images.githubusercontent.com/17903237/162877063-ccbc3cda-bbae-420e-a6f1-b1d0aa952078.png">
  
    #### Responsables de Salud
 Al seleccionar en la pantalla Home el botón de “Responsables de Salud”, se abrirá la siguiente pantalla, donde se visualizará un listado de los responsables de salud que tiene activos dicho Centro de Salud y abajo a la derecha de la pantalla un botón “+” donde se podrá dar de alta nuevo Responsable de Salud .
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/responsables-cds.png" width="250">
+ <img width="561" alt="Captura de Pantalla 2022-04-12 a la(s) 00 49 26" src="https://user-images.githubusercontent.com/17903237/162877034-1e87c76a-c6c8-476b-a7df-840acee394a2.png">
+
  
  #### Dar de alta nuevo Responsables de Salud
 Al seleccionar en la pantalla “Responsables de Salud” el botón de “+” para dar de alta un nuevo responsable de salud, se abrirá la siguiente pantalla.
 La pantalla contendrá un formulario a completar con los siguiente campos: mail, contraseña, nombre, apellido, RUP, fecha de nacimiento y sexo.
+ <img width="558" alt="alta-responsables-cds" src="https://user-images.githubusercontent.com/17903237/162877014-bb63ddd4-fded-4577-84e6-048c2e847333.png">
 
- <img src="https://github.com/lalipognante/vacunario/blob/master/alta-responsables-cds.png" width="250">
