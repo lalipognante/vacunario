@@ -7,7 +7,7 @@ Para el caso de los Centros de Salud, les permitirá simplificar la gestión del
  
  ## Pantallas de la app
  
- En esta sección del documento se procederá a explicar las funcionalidades más importantes que posee la plataforma, de forma gráfica mostrando las pantallas principales de la misma, haciendo un recorrido por cada una e indicando el objetivo de cada una de las pantallas.
+ En esta sección del documento se procederá a explicar las funcionalidades más importantes que posee la plataforma, de forma gráfica mostrando las pantallas principales de la misma, haciendo un recorrido por cada una e indicando el objetivo de cada una de las pantallas. Solamente se adjuntaran las pantallas de la aplicación como Modo Padre, se omitiran los detalles de las pantallas de Centro de Salud y Responsable de Salud.
  
  ### Pantallas de la aplicación del Padre
  
